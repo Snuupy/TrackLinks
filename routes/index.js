@@ -53,8 +53,14 @@ router.get("/:id/gif.gif", function(req, res) {
 router.get("/:id", function(req, res) {
 	var log = storage.getUserLog(req.params.id);
 
-	res.json({
-		yourCookieID: req.cookies.userid,
+	// res.json({
+	// 	yourCookieID: req.cookies.userid,
+	// 	views: log.length,
+	// 	log: log
+	// });
+	console.log(log);
+	res.render('tracking', {
+		cookieID: req.cookies.userid,
 		views: log.length,
 		log: log
 	});

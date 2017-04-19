@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    {{!-- <link rel='stylesheet' href='/stylesheets/style.css' /> --}}
+  </head>
+  <body>
+    Your cookie ID: {{cookieID}}
+    <br />
+    Total views: {{views}}
+    <br />
+    <br />
+    {{#each log}}
+      Time: {{this.date}}
+      <br/>
+      IP: {{this.ip}}
+      <br/>
+      User-Agent: {{this.useragent}}
+      <br/>
+      <br/>
+    {{/each}}
+  </body>
+
+</html>
