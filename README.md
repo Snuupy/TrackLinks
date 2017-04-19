@@ -1,5 +1,5 @@
 # TrackLinks
-tracks people that visit URLs except you via persistent cookie
+tracks people that load your gifs via persistent cookie except your devices
 
 Explanation here: https://medium.com/@Snuupy/streak-tracking-bug-proof-of-concept-fix-41c7cda4c958
 
