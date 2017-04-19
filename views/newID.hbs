@@ -2,25 +2,36 @@
 <html>
   <head>
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    {{!-- <link rel='stylesheet' href='/stylesheets/style.css' /> --}}
   </head>
   <body>
     {{{body}}}
-    URL: {{url}}
-    <br/>
+
     Your ID is: {{id}}
-    <br/>
-    If you click or load the following links, you won't be tracked: 
+    <br />
+    <br />
+    Track people:
+	<div class="indent">
+		<a href="{{trackingURL}}">{{trackingURL}}</a>
+	</div>
+
+    <br />
+    Click this on all your other devices. This will set a cookie so that none of them get tracked:
+
     <div class="indent">
-    	<a href="{{idLink}}">{{idLink}}</a>
-    	<br />
-    	<a href="{{gifLink}}">{{gifLink}}</a>
-    </div>
-    you won't be tracked.
-    <br/>
-    Anyone that clicks or loads the above will be tracked.
-    <br/>
-    Refreshing this page will generate and set a new cookie with an updated ID.
+		<a href="{{setURL}}">{{setURL}}</a>
+	</div>
+
+   	
+    <br />
+    Embed this GIF link in your emails that you send: 
+
+    <div class="indent">
+		<a href="{{gifLink}}">{{gifLink}}</a>
+	</div>
+
+	<br />
+    Refreshing this page will generate and set a new cookie.
   </body>
-    }
+
 </html>
